@@ -1,0 +1,57 @@
+.menu-body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-content{
+    width: 80vw;
+    height: 600px;
+    display: flex;
+}
+
+.menu-lists{
+    width: 50vw;
+    font-size: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-others{
+    width: 30vw;
+    font-size: 30px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px
+}
+
+.menu-link{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.menu-link::after{
+    position: absolute;
+    content: '';
+    left: 0%;
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    transition: .5s;
+}
+
+.menu-link:hover::after{
+    width: 100%;
+}

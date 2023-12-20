@@ -1,0 +1,38 @@
+.sliding-overlay-image-container {
+    position: relative;
+    width: 50vw;
+    height: 70vh;
+    opacity: 1;
+  }
+  
+.image-slide {
+    position: absolute;
+    top: -100%; /* Initial position outside the container */
+    left: 0;
+    width: 50vw;
+    height: 50vh;
+    transition: top 2s ease-in-out; 
+    
+}
+  
+.image-slide.active {
+    top: 0; /* Position the active slide at the center */
+    
+}
+  
+.slide-image {
+    width: 50vw;
+    height: 50vh;
+    object-fit: cover;
+    
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}

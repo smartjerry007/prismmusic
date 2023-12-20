@@ -1,0 +1,327 @@
+.landingpage-body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+}
+
+.landingpage-content{
+    height: 80vh;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    padding-left: 10vw;    
+}
+
+.content-text{
+    font-size: 100px;
+    color: #9f9ffb;
+}
+
+.introductionpage-body{
+    width: 100vw;
+    height: 1000px;
+    display: flex;
+}
+
+.introductionpage-content{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+h4{
+    width: 90%;
+    line-height: 5.1vw;
+    font-size: clamp(2.5rem,4.63vw,6.25rem);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+.playlists-image{    
+    width: 100vw;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+.firstblock-image{
+    z-index: 0;
+    width: 130vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;   
+    left:-525px;
+    transition: 0.3s ease-in-out;
+    transition: smooth; 
+    justify-content: space-between;
+}
+
+.iamge-button {
+    width: 250px;
+    height: 250px;
+    background-size: 100% 100%;
+}
+
+.first-image1{
+    background-image: url('https://www.prismamusicgroup.com/wp-content/uploads/2023/08/Calming-Focus.jpg');
+}
+
+.first-image2{
+    background-image: url('https://www.prismamusicgroup.com/wp-content/uploads/2023/08/Deep-Sleep.jpg');
+}
+
+.first-image3{
+    background-image: url('https://www.prismamusicgroup.com/wp-content/uploads/2023/08/Piano-Noir.jpg'); 
+}
+
+.first-image4{
+    background-image: url('https://www.prismamusicgroup.com/wp-content/uploads/2023/08/Spanish-Guitar.jpg');
+}
+
+.first-image5{
+    background-image: url('https://www.prismamusicgroup.com/wp-content/uploads/2023/08/Lofi-Jazz.jpg');
+}
+
+.first-image6{
+    background-image: url('https://www.prismamusicgroup.com/wp-content/uploads/2023/08/Morning-Yoga.jpg');
+}
+
+.secondblock-image{
+    z-index: 0;
+    width: 130vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;   
+    right:-525px;
+    transition: 0.3s ease-in-out;
+    transition: smooth; 
+    justify-content: space-between;
+}
+
+.second-image1{
+    background-image: url('https://www.prismamusicgroup.com/wp-content/uploads/2023/08/Evening-Yoga.jpg');
+}
+
+.second-image2{
+    background-image: url('https://www.prismamusicgroup.com/wp-content/uploads/2023/08/Dream-Time.jpg');
+}
+
+.second-image3{
+    background-image: url('https://www.prismamusicgroup.com/wp-content/uploads/2023/08/Lullabies-for-Kids.jpg');
+}
+
+.second-image4{
+    background-image: url('https://www.prismamusicgroup.com/wp-content/uploads/2023/08/Relaxing-Cuba.jpg');
+}
+
+.second-image5{
+    background-image: url('https://www.prismamusicgroup.com/wp-content/uploads/2023/08/Global-Beats.jpg');
+}
+
+.second-image6{
+    background-image: url('https://www.prismamusicgroup.com/wp-content/uploads/2023/08/Silk-Road-Music-From-The-Orient.jpg');
+}
+
+.playlists-button{
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlists-button-content{
+    width: 200px;
+    height: 50px;    
+    background-color: #9f9ffb;    
+    border-radius:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.playlists-button-content > a {
+    color: white;
+    text-decoration-line: none;
+}
+
+.playlists-button-content:hover{
+    width: 250px;
+    background-color: rgba(51, 51, 51, 0.7);
+    transition: smooth;
+    transition: 0.3s ease-in-out;
+}
+
+.slider-container {
+    position: relative;
+    width: 100vw;
+    height: 700px; /* Set the height of the slider container */
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+
+}
+  
+.image-slider {
+position: relative;
+width: 50vw;
+height: 500px; /* Set the height of the images */
+display: flex;
+transition: transform 1s ease-in-out; /* Add transition for smooth movement */
+}
+  
+.image-slider img {
+width: 50vw;
+height: 500px; /* Set the height of the images */
+position: absolute;
+left: 0;
+opacity: 0;
+transition: opacity 1s ease-in-out; /* Add transition for smooth opacity change */
+
+}
+  
+.image-slider img.active0 {
+opacity: 1;
+}
+
+.name-animation div{
+    position: absolute;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    left: 55vw;
+    top: 150px;
+    font-size: 50px;
+    opacity: 0;
+   transition: smooth;
+}
+
+.name-animation .text1 {
+    position: absolute;
+    left: 55vw;
+    top: 100px;
+    font-size: 22px;
+    transition: 0.1s ease-in-out;   
+    opacity: 0.5;
+}
+
+.name-animation .active0 {
+    opacity: 1;   
+    animation-direction: inherit;
+}
+
+.videopage-body{
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videopage-content{
+    width: 50vw;
+    height: 350px;
+    background-image: url('https://www.prismamusicgroup.com/wp-content/uploads/2023/09/Foto-Avatar-5120-x-2880-47.png');
+    background-size: 100% 100%;    
+    transition: 0.3s ease-in-out;
+    transition: smooth; 
+}
+
+.figurepage-body{
+    width: 100vw;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 25px;
+}
+
+.content-area{
+    width: 80vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.content-title{
+    position: relative;
+    left: 8vw;
+}
+
+.figurepage-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.numbers{
+    color: #9f9ffb; 
+    font-size: 50px;   
+}
+
+.content-track{
+    position: relative;
+    top: -25px;
+}
+
+.figurepage-footer{
+    width: 90vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.figurepagefooter-title{
+    font-size: 25px;
+}
+
+.figurepagefooter-input{
+    width: 100%;
+    height: 120px;
+    border: none;
+    background-color: #e5e7eb;
+    font-size: 80px;
+    color: rgba(51, 51, 51, 0.4);
+    outline: none;
+}
+
+.figurepagefooter-input-area{
+    width: 93%;
+    height: 130px;
+    border-bottom: 3px rgba(51, 51, 51, 0.8) solid;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.figurepagefooter-button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+}
+
+.email-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+

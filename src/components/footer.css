@@ -1,0 +1,102 @@
+.footerpage-body{
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    position: relative;
+    
+}
+
+.footerpage-area{
+    width: 80vw;
+    height: 300px;
+    display: flex;
+}
+
+.footerpage-content{
+    width: 40vw;
+    display: flex;
+    align-items: left;
+}
+
+.footerpage-logo{
+    display: flex;    
+    flex-direction: column;    
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.footerpage-brand{
+    display: flex;
+    gap: 20px;
+}
+
+.footerpage-contact{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerpage-otherchannel{
+    width: 10vw;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.footerpage-lists{
+    width: 15vw;
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.footerpage-lists:hover{
+    color:white;
+
+}
+
+.footerpage-date{
+    position: absolute;
+    left: 5vw;
+    top: 62vh;
+    font-weight: 400;
+}
+
+.footer_link{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.footer_link::after{
+    position: absolute;
+    content: '';
+    left: 0%;
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    transition: .5s;
+}
+
+.footer_link:hover::after{
+    width: 100%;
+}
+
+.other-link {
+    color: white;
+}
+  
+.active {
+    color: white !important;
+}
+
+.inactive {
+    color: rgba(51, 51, 51, 0.8) !important;
+}

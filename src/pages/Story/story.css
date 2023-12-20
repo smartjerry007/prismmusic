@@ -1,0 +1,51 @@
+.summary-body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://www.prismamusicgroup.com/wp-content/uploads/2023/11/adrian-infernus-GLf7bAwCdYg-unsplash-1920x1080.jpg');
+    background-size: 100% 100%;
+    display: flex;
+}
+
+.summary-content{
+    width: 70vw;
+    height: 60vh;
+    display: flex;
+    position: relative;
+    top: 10vh;
+    left: 5vw;
+    flex-direction: column;
+    color: white;
+    font-size: 30px;
+}
+
+.summary-article{
+    font-size: 150px;
+}
+
+.grammy-body{
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grammy-image{
+    width: 50vw;
+    height: 350px;
+    background-image: url('https://www.prismamusicgroup.com/wp-content/uploads/2023/08/prisma_awward.jpg');
+    background-size: 100% 100%;    
+    transition: 0.3s ease-in-out;
+    transition: smooth;
+    color: white;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center; 
+}
+
+.grammy-letter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

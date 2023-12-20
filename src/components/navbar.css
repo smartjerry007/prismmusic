@@ -1,0 +1,98 @@
+.navbar-body{
+    width: 100vw;
+    background-color: white; 
+    display: flex; 
+    justify-content: center;  
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar-logo{
+    padding-top: 15px;
+}
+
+.navbar-empty{
+    width: 90vw;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.navbar-menu{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.music-mark{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu {
+    position: relative;
+}
+  
+.dropdown-menu-button {    
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+  
+.dropdown-menu-list {
+    position: absolute;
+    top: 8vh;
+    left: -5vw;
+    width: 120px;
+    height: 250px;
+    background-color: white;
+    border: 2px #9f9ffb solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+
+.nav-link{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.nav-link::after{
+    position: absolute;
+    content: '';
+    left: 0%;
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    transition: .5s;
+}
+
+.nav-link:hover::after{
+    width: 90%;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: -90vw;
+    width: 100%;
+    height: 100%;    
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+  
+.slide .overlay {
+opacity: 1;
+}

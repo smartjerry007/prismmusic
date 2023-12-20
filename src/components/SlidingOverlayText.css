@@ -1,0 +1,24 @@
+.sliding-overlay-text-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .text-slide {
+    position: absolute;
+    top: -100%; /* Initial position outside the container */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Adjust the font size as needed */
+    color: black; /* Adjust the text color as needed */
+    transition: top 0.5s ease-in-out;
+    text-align: center;
+  }
+  
+  .text-slide.active {
+    top: 0; /* Position the active text slide at the center */
+  }
